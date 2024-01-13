@@ -135,13 +135,14 @@ nav > ul li{
     }
     .features .team-img-container{
         width: 100%;
+        grid-template-columns: 1fr;
     }
     .features .features-content{
         width: 100%;
         padding-left: 0;
     }
     .features .features-content .btn-primary{
-        margin: 20px 0;
+        margin-bottom: 40px;
     }
 }
 @media screen and (min-width:576px) and (max-width:960px) {
@@ -158,5 +159,23 @@ nav > ul li{
     .banner {
         width: 100%;
         padding: 30px;
+    }
+    .features {
+        width: 100%;
+        flex-direction: column-reverse;
+        padding: 0 50px;
+    }
+
+    .features .team-img-container {
+        width: 100%;
+    }
+
+    .features .features-content {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .features .features-content .btn-primary {
+        margin-bottom: 40px;
     }
 }
