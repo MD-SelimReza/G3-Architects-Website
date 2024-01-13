@@ -26,7 +26,7 @@ body{
 /* header section styles */
 header{
     background: rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
+    padding: 40px 120px;
 }
 nav{
     display: flex;
@@ -51,8 +51,6 @@ nav > ul li{
 
 /* banner section styles */
 .banner{
-    width: 75%;
-    max-width: 1440px;
     margin: 0 auto;
 }
 .banner .banner-content{
@@ -74,6 +72,46 @@ nav > ul li{
     margin-top: 50px;
 }
 
+/* features section styles */
+.features{
+    width: 75%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px auto;
+}
+.features .team-img-container{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.features .team-img-container img{
+    width: 100%;
+}
+.features .features-content{
+    padding-left: 60px;
+    width: 50%;
+}
+.features .features-content .features-title{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.text-quick-list{
+    color: #727272;
+    width: 500;
+}
+.text-features{
+    color: #FF900E;
+}
+.features .features-content .features-description{
+    color: #727272;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
 /* responsive media queries */
 /* small devices */
 @media screen and (max-width:576px) {
@@ -84,15 +122,41 @@ nav > ul li{
         flex-direction: column;
     }
     nav > ul li{
-        margin-right: 10px;
+        margin-right: 15px;
     }
     .banner{
         width: 100%;
         padding: 20px;
     }
+    .features{
+        width: 100%;
+        flex-direction: column-reverse;
+        padding: 0 20px;
+    }
+    .features .team-img-container{
+        width: 100%;
+    }
+    .features .features-content{
+        width: 100%;
+        padding-left: 0;
+    }
+    .features .features-content .btn-primary{
+        margin: 20px 0;
+    }
 }
 @media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding: 20px;
+    }
     nav{
         flex-direction: column;
+    }
+    nav > ul li {
+        margin-right: 20px;
+    }
+
+    .banner {
+        width: 100%;
+        padding: 30px;
     }
 }
